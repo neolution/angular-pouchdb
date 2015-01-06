@@ -100,6 +100,7 @@ THE SOFTWARE.
               var db;
               db = new PouchDB(name, options);
               return {
+                db: db, 
                 id: db.id,
                 put: qify(db.put.bind(db)),
                 post: qify(db.post.bind(db)),
